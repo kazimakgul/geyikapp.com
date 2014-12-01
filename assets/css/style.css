@@ -69,7 +69,7 @@ nav {
 	left: 0;
 	width: 100%;
 	z-index: 999;
-	background: #8D329C;
+	background: #8F4791;
 	font-size: 18px;
 	color: #fff;
     line-height: 32px;
@@ -542,7 +542,7 @@ nav .show-menu a:hover { color: #fff; }
 
 footer {
 	padding: 25px 0 20px 0;
-	background: #8D329C;
+	background: #8F4791;
 	text-align: right;
 
 }
