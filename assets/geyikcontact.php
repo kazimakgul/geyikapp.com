@@ -28,7 +28,7 @@ if($_POST) {
     if(isEmail($clientEmail) && $subject != '' && $message != '') {
         // Send email
 		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
-		mail($emailTo, $subject . " (jesis)", $message, $headers);
+		mail($emailTo, $subject . " (Geyikapp.com)", $message, $headers);
     }
 
     echo json_encode($array);

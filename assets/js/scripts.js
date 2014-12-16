@@ -193,7 +193,7 @@ jQuery(document).ready(function() {
 	    var postdata = $('.contact-form form').serialize();
 	    $.ajax({
 	        type: 'POST',
-	        url: 'assets/contact.php',
+	        url: 'http://appgaraj.com/geyikcontact.php',
 	        data: postdata,
 	        dataType: 'json',
 	        success: function(json) {
@@ -208,7 +208,7 @@ jQuery(document).ready(function() {
 	            }
 	            if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
 	                $('.contact-form form').fadeOut('fast', function() {
-	                    $('.contact-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
+	                    $('.contact-form').append('<p>Bizimle iletişime geçtiğiniz için teşekkür ederiz, En kısa zamanda size geri dönüş sağlanacaktır.</p>');
 	                    // reload background
 	    				$('.contact-container').backstretch("resize");
 	                });
